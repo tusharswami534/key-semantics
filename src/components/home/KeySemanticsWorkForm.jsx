@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import swal from 'sweetalert';
 
 const KeySemanticsWorkForm = () => {
   const formData = {
@@ -22,10 +23,17 @@ const KeySemanticsWorkForm = () => {
       setValue(formData);
       setError(false);
       console.log(value);
+      swal({
+        title: "Are you sure?",
+        text: "Are you sure that you want to leave this page?",
+        icon: "success",
+        dangerMode: true,
+      });
     }
   };
   return (
-    <div className="py-24 max-lg:py-20 max-md:py-16 relative max-sm:py-10 bg-blue-zodiac max-lg:px-4">
+    <div className=" bg-blue-zodiac max-lg:px-4">
+      <div className="max-w-[1440px] mx-auto relative py-24 max-lg:py-20 max-md:py-16 max-sm:py-10">
       <img src="./assets/images/webp/open-bracket.webp" alt="open-bracket" className="absolute top-0 left-[120px] max-lg:hidden" />
       <img src="./assets/images/webp/close-bracket.webp" alt="open-bracket" className="absolute bottom-0 right-[120px] max-lg:hidden" />
       <div className="container">
@@ -95,6 +103,7 @@ const KeySemanticsWorkForm = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

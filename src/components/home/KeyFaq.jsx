@@ -33,7 +33,7 @@ const KeyFaq = () => {
                     </div>
                     <div className="lg:max-w-[522px] mt-4 max-md:mt-2">
                         {KEY_FAQ_LIST.map((obj, i) => (
-                            <div className={`border-t-[0.5px] border-b-[0.5px] border-solid border-silver ${i === 0 ? 'border-t-[1px]' : i === 3 ? 'border-b-[1px]' : ''}`} key={i}>
+                            <div className={`border-b border-solid border-silver ${i === 0 ? 'border-t' : ''}`} key={i}>
                                 <button
                                     onClick={() => toggleAccordion(i)}
                                     className="flex justify-between py-4 w-full items-center text-lg text-blue-zodiac leading-175 font-medium"
