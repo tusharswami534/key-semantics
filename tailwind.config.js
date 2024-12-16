@@ -14,7 +14,10 @@
       },
       extend: {
         colors: {
-          'blue-zodiac' : '#191A42'
+          'blue-zodiac' : '#191A42',
+          'moody-blue' : '#7C7EB9',
+          'nile-blue' : '#24254B',
+          'picton-blue' : '#48C3D7',
         },
         backgroundImage: {
           'hero-image': "url('/public/assets/images/png/hero-bg-image.png')",

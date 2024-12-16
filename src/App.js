@@ -1,12 +1,16 @@
 import './App.css';
 import Hero from './components/home/Hero';
-import KeySemanticsWork from './components/home/KeySemanticsWork';
+import KeyFaq from './components/home/KeyFaq';
+import KeySemanticsCard from './components/home/KeySemanticsCard';
+import KeySemanticsWorkForm from './components/home/KeySemanticsWorkForm';
 
 function App() {
   return (
     <>
     <Hero/>
-    <KeySemanticsWork/>
+    {/* <KeySemanticsCard/> */}
+    <KeyFaq/>
+    <KeySemanticsWorkForm/>
     </>
   );
 }
