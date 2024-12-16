@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
+import React, { useState } from "react";
 
 const KeySemanticsWorkForm = () => {
-    useEffect(() => {
-        AOS.init(); 
-      }, []);
-    
   const formData = {
     name: "",
     email: "",
@@ -30,12 +25,12 @@ const KeySemanticsWorkForm = () => {
     }
   };
   return (
-    <div className="py-24 bg-blue-zodiac">
+    <div className="py-24 bg-blue-zodiac max-lg:px-4">
       <div className="container">
         <h2 className="leading-225 text-white text-custom-3xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-center font-bold">
           How does KeySemantics work?
         </h2>
-        <p data-aos="fade-right " className="text-center text-white leading-175 text-base mt-2">
+        <p className="text-center text-white leading-175 text-base mt-2">
           Request a demo for your team and let us show you how KeySemantics can
           help your company
         </p>
@@ -46,7 +41,7 @@ const KeySemanticsWorkForm = () => {
           action=""
           className="max-w-[399px] mt-16 mx-auto flex justify-center items-center flex-col  "
         >
-          <input data-aos="fade-right"
+          <input
             value={value.name}
             onChange={(e) => setValue({ ...value, name: e.target.value })}
             type="text"
@@ -56,7 +51,7 @@ const KeySemanticsWorkForm = () => {
           <p className="text-red-800 font-bold text-left">
             {error && !value.name && "Name is required"}
           </p>
-          <input data-aos="fade-right"
+          <input
             value={value.email}
             onChange={(e) => setValue({ ...value, email: e.target.value })}
             type="email"
@@ -66,7 +61,7 @@ const KeySemanticsWorkForm = () => {
           <p className="text-red-800 font-bold text-left">
             {error && !value.email && "Email is required"}
           </p>
-          <input data-aos="fade-right"
+          <input
             value={value.company}
             onChange={(e) => setValue({ ...value, company: e.target.value })}
             type="text"
@@ -76,7 +71,7 @@ const KeySemanticsWorkForm = () => {
           <p className="text-red-800 font-bold text-left">
             {error && !value.company && "Company is required"}
           </p>
-          <input data-aos="fade-right"
+          <input
             value={value.number}
             onChange={(e) => setValue({ ...value, number: e.target.value })}
             type="number"
