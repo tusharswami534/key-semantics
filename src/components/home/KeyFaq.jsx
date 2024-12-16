@@ -33,10 +33,10 @@ const KeyFaq = () => {
                     </div>
                     <div className="lg:max-w-[522px] mt-4 max-md:mt-2">
                         {KEY_FAQ_LIST.map((obj, i) => (
-                            <div className={`border-b border-solid border-silver ${i === 0 ? 'border-t' : ''}`} key={i}>
+                            <div className={`border-b border-solid box-border border-silver ${i === 0 ? 'border-t' : ''}`} key={i}>
                                 <button
                                     onClick={() => toggleAccordion(i)}
-                                    className="flex justify-between py-4 w-full items-center text-lg text-blue-zodiac leading-175 font-medium"
+                                    className="flex justify-between py-[15px] w-full items-center text-lg text-blue-zodiac leading-175 font-medium"
                                 >
                                     {obj.heading}
                                     <img className={` transition-all duration-500 ${openIndex === i ? "rotate-180" : "rotate-0"}`} src="./assets/images/svg/arrow-icon.svg" alt="arrow-icon" />
