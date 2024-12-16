@@ -7,8 +7,6 @@
       container: {
         center: true,
         screens: {
-          
-          md: '768px',
           '2xl': '1200px',
         },
       },

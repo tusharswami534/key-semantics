@@ -11,10 +11,10 @@ const KeyFaq = () => {
 
     return (
         <div className="pt-[81px] pb-[74px] max-lg:py-16 max-md:py-12 max-sm:py-10">
-            <div className="container w-full flex max-lg:flex-wrap gap-12 relative mx-auto">
+            <div className="container max-xl:px-4 max-lg:justify-center  w-full flex max-lg:flex-wrap gap-12 max-xl:gap-8 relative mx-auto">
                 <div>
                     <img
-                        className="max-w-[600px] sticky top-0"
+                        className="max-w-[600px] w-full lg:sticky top-0"
                         src="./assets/images/png/key-faq-image.png"
                         alt="key-faq-image"
                     />
@@ -30,7 +30,7 @@ const KeyFaq = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="max-w-[522px] mt-4 max-md:mt-2">
+                    <div className="lg:max-w-[522px] mt-4 max-md:mt-2">
                         {KEY_FAQ_LIST.map((obj, i) => (
                             <div className="border-t border-b-[0.5px] border-solid border-silver" key={i}>
                                 <button
@@ -47,11 +47,11 @@ const KeyFaq = () => {
                                 >
                                     <p className="text-base leading-175 text-blue-zodiac">{obj.descriptionOne}</p>
                                     <p className="text-base leading-175 text-blue-zodiac mt-2 max-md:mt-1">{obj.descriptionTwo}</p>
-                                    <div className="flex gap-4">
-                                        <img src={obj.imageOne} alt="faq" />
-                                        <img src={obj.imageTwo} alt="faq" />
+                                    <div className="flex gap-4 max-sm:justify-center">
+                                        <img className="max-sm:max-w-[150px]" src={obj.imageOne} alt="faq" />
+                                        <img className="max-sm:max-w-[150px]" src={obj.imageTwo} alt="faq" />
                                     </div>
-                                    <p className="text-base leading-175 text-blue-zodiac mt-4 max-md:mt-2">{obj.descriptionThree}</p>
+                                    <p className="text-base leading-175 text-blue-zodiac my-4 max-md:my-2">{obj.descriptionThree}</p>
                                 </div>
                             </div>
                         ))}
