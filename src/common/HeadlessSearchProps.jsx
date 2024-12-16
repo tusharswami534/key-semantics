@@ -8,8 +8,8 @@ const HeadlessSearchProps = ({Heading , list , imgSrc , button }) => {
         <h2 className='leading-225 text-blue-zodiac text-custom-3xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold' >{Heading}</h2>
           <div className="ml-6 max-w-[522px]">
             <ul className="list-disc text-blue-zodiac">
-              {list.map((item) => (
-                <li className="text-base leading-175">{item}</li>
+              {list.map((item , i) => (
+                <li key={i} className="text-base leading-175">{item}</li>
               ))}
             </ul>
           </div>

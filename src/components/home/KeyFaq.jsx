@@ -10,7 +10,7 @@ const KeyFaq = () => {
     };
 
     return (
-        <div className="pt-[81px] bg-ghost-white pb-[74px] max-lg:py-16 max-md:py-12 max-sm:py-10">
+        <div className="pt-[81px] max-lg:pt-20 max-md:py-16 max-sm:py-10 bg-ghost-white pb-[74px] max-lg:pb-[70px] ">
             <div className="container max-xl:px-4 max-lg:justify-center  w-full flex max-lg:flex-wrap gap-12 max-xl:gap-8 relative mx-auto">
                 <div>
                     <img

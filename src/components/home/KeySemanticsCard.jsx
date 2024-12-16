@@ -5,8 +5,8 @@ import Lottie from "react-lottie-player";
 
 const KeySemanticsCard = () => {
   return (
-    <div className="pt-24 max-xl:px-4">
-      <div className="text-center">
+    <div className="pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-10 max-xl:px-3 max-lg:px-4 max-md:px-5">
+      <div className="text-center pb-14 max-lg:pb-12 max-md:pb-10 max-sm:pb-8">
         <CommonHeading Heading={"How does KeySemantics work?"} />
       </div>
 
