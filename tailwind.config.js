@@ -18,6 +18,9 @@
           'moody-blue' : '#7C7EB9',
           'nile-blue' : '#24254B',
           'picton-blue' : '#48C3D7',
+          'black-rock' : '#111235',
+          'moody-blue' : '#7C7DB9',
+          'silver' : '#C9CAD4',
         },
         backgroundImage: {
           'hero-image': "url('/public/assets/images/png/hero-bg-image.png')",

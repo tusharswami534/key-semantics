@@ -1,7 +1,8 @@
 import React from 'react'
 import CommonHeading from '../../common/CommonHeading'
 import { KEY_SEMANTICS_CARD_LIST } from '../../utils/helper'
-import Lottie from 'react-lottie'
+import Lottie from 'react-lottie';
+import Servers from '../../lottie/file-server-.json'
 
 const KeySemanticsCard = () => {
   return (
@@ -12,7 +13,7 @@ const KeySemanticsCard = () => {
         <div className='max-w-[1026px] mx-auto flex flex-wrap gap-24'>
                 {KEY_SEMANTICS_CARD_LIST.map((item, i) => (
                     <div className='flex flex-col' key={i}>
-                        <Lottie animationData={item.lottie} />
+                    <Lottie animationData={Servers}/>
                     </div>
                 ))}
         </div>
