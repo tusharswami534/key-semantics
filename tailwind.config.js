@@ -19,6 +19,7 @@
           'black-rock' : '#111235',
           'moody-blue' : '#7C7DB9',
           'silver' : '#C9CAD4',
+          'ghost-white' : '#F6F8FA',
         },
         backgroundImage: {
           'hero-image': "url('/public/assets/images/png/hero-bg-image.png')",
@@ -33,6 +34,9 @@
           '175': '175%',
           '225': '225%',
         },
+        boxShadow: {
+          "analytics-api": "0px 10px 40px 0px #41566B0D"
+        }
       },
     },
     plugins: [],

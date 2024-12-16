@@ -1,3 +1,12 @@
 .key-faq-heading h2{
   text-align: left ;
 }
+
+.analytics-api svg  {
+  max-width : 1200px !important ;
+  margin-left: auto;
+  margin-right: auto;
+}
+.analytics-section{
+  background: linear-gradient(to bottom, white 50%, #F6F8FA 50%);
+} 

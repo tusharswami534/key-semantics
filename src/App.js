@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './common/Footer';
+import AnalysisApi from './components/home/AnalysisApi';
 import DataSecurity from './components/home/DataSecurity';
 import HeadlessSearch from './components/home/HeadlessSearch';
 import Hero from './components/home/Hero';
@@ -12,6 +13,7 @@ function App() {
     <>
     <Hero/>
     <KeySemanticsCard/>
+    <AnalysisApi/>
     <KeyFaq/>
     <HeadlessSearch/>
     <DataSecurity/>
