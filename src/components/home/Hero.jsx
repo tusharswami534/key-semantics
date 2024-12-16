@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='bg-hero-image bg-cover bg-center bg-no-repeat lg:min-h-[900px] max-xl:px-4 max-md:px-5 max-lg:px-4'>
       <div className='container items-center flex justify-between mx-auto pt-12 max-lg:pt-10 max-md:pt-8 max-sm:pt-6'>
         <a href="/">
-          <img className='max-w-[248px] max-md:max-w-[200px] max-sm:max-w-[160px] w-full' src="./assets/images/png/logo-web 2.png" alt="logo" />
+          <img className='max-w-[248px] max-md:max-w-[200px] max-sm:max-w-[160px] w-full' src="./assets/images/webp/logo-web.webp" alt="logo" />
         </a>
         <CustomButton commonButton={'Request a demo'}/>
       </div>

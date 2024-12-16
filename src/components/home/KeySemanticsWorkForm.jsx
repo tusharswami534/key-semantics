@@ -25,21 +25,23 @@ const KeySemanticsWorkForm = () => {
     }
   };
   return (
-    <div className="py-24 bg-blue-zodiac max-lg:px-4">
+    <div className="py-24 max-lg:py-20 max-md:py-16 relative max-sm:py-10 bg-blue-zodiac max-lg:px-4">
+      <img src="./assets/images/webp/open-bracket.webp" alt="open-bracket" className="absolute top-0 left-[120px] max-lg:hidden" />
+      <img src="./assets/images/webp/close-bracket.webp" alt="open-bracket" className="absolute bottom-0 right-[120px] max-lg:hidden" />
       <div className="container">
         <h2 className="leading-225 text-white text-custom-3xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-center font-bold">
           How does KeySemantics work?
         </h2>
-        <p className="text-center text-white leading-175 text-base mt-2">
+        <p className="text-center text-white leading-175 text-base">
           Request a demo for your team and let us show you how KeySemantics can
           help your company
         </p>
       </div>
-      <div className="">
+      <div className="flex justify-center">
         <form
           onSubmit={changeHandler}
           action=""
-          className="max-w-[399px] mt-16 mx-auto flex justify-center items-center flex-col  "
+          className="max-w-[406px] mt-16 mx-auto flex justify-center items-center flex-col  "
         >
           <input
             value={value.name}
@@ -81,7 +83,7 @@ const KeySemanticsWorkForm = () => {
           <p className="text-red-800 font-bold text-left">
             {error && !value.number && "Number is required"}
           </p>
-          <p className="text-center text-moody-blue mt-4 mb-6">
+          <p className="text-center text-moody-blue text-[10px] leading-130 mt-4 mb-6">
             By submitting my contact information I agree to the KeySemantics
             Privacy Policy
           </p>

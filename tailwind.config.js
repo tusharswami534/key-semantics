@@ -22,7 +22,7 @@
           'ghost-white' : '#F6F8FA',
         },
         backgroundImage: {
-          'hero-image': "url('/public/assets/images/png/hero-bg-image.png')",
+          'hero-image': "url('/public/assets/images/webp/hero-bg-image.webp')",
         },
         fontSize: {
           'custom-3xl': '32px',

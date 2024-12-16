@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CommonHeading from "../../common/CommonHeading";
 import { KEY_FAQ_HEADING_LIST, KEY_FAQ_LIST } from "../../utils/helper";
+import CustomButton from "../../common/CustomButton";
 
 const KeyFaq = () => {
     const [openIndex, setOpenIndex] = useState(0);
@@ -15,12 +16,12 @@ const KeyFaq = () => {
                 <div>
                     <img
                         className="max-w-[600px] w-full lg:sticky top-0"
-                        src="./assets/images/png/key-faq-image.png"
+                        src="./assets/images/webp/key-faq-image.webp"
                         alt="key-faq-image"
                     />
                 </div>
                 <div className="key-faq-heading">
-                    <CommonHeading Heading={"Key Q&A"} />
+                    <CommonHeading customClassName={'max-lg:!text-center max-lg:!mb-2'} heading={"Key Q&A"} />
                     <div className="ml-4">
                         <ul className="list-disc max-w-[522px]">
                             {KEY_FAQ_HEADING_LIST.map((item, idx) => (
@@ -32,7 +33,7 @@ const KeyFaq = () => {
                     </div>
                     <div className="lg:max-w-[522px] mt-4 max-md:mt-2">
                         {KEY_FAQ_LIST.map((obj, i) => (
-                            <div className="border-t border-b-[0.5px] border-solid border-silver" key={i}>
+                            <div className={`border-t-[0.5px] border-b-[0.5px] border-solid border-silver ${i === 0 ? 'border-t-[1px]' : i === 3 ? 'border-b-[1px]' : ''}`} key={i}>
                                 <button
                                     onClick={() => toggleAccordion(i)}
                                     className="flex justify-between py-4 w-full items-center text-lg text-blue-zodiac leading-175 font-medium"
@@ -55,6 +56,9 @@ const KeyFaq = () => {
                                 </div>
                             </div>
                         ))}
+                        <div className="mt-6 max-md:mt-4 max-lg:justify-center max-lg:flex">
+                        <CustomButton commonButton={'Get a demo'}/>
+                        </div>
                     </div>
                 </div>
             </div>
